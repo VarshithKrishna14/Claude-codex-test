@@ -1,0 +1,11 @@
+.app {
+  min-height: 100vh;
+}
+
+.message {
+  margin: 24px;
+  padding: 16px;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  background: #161b22;
+}

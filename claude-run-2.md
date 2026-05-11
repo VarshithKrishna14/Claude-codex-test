@@ -1,0 +1,10 @@
+- Did it show architecture plan before coding? Y/N
+- Component count created:
+- Any component over 200 lines? Y/N (which ones)
+- Did virtual scrolling actually work on large diff? Y/N
+- Did optimistic updates roll back correctly on rejection? Y/N
+- Did WS reconnection with backoff work? Y/N
+- TypeScript errors on first compile: (number)
+- Time to first working UI in browser:
+- Time to fully working UI:
+- Total tokens:

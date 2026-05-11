@@ -1,0 +1,27 @@
+.item {
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 6px 8px;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11.5px;
+  margin-bottom: 4px;
+}
+
+.author {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.time {
+  color: var(--text-dim);
+}
+
+.body {
+  white-space: pre-wrap;
+  line-height: 1.4;
+}

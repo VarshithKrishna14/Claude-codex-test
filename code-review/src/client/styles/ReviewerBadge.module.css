@@ -1,0 +1,34 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  font-size: 12px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.badge[data-status="commented"] .dot {
+  background: var(--text-dim);
+}
+.badge[data-status="approved"] .dot {
+  background: var(--green);
+}
+.badge[data-status="changes_requested"] .dot {
+  background: var(--red);
+}
+
+.name {
+  font-weight: 600;
+}
+
+.status {
+  color: var(--text-dim);
+}

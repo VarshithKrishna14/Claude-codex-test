@@ -1,0 +1,42 @@
+.line {
+  display: grid;
+  grid-template-columns: 58px minmax(0, 1fr);
+  min-height: 28px;
+  border-bottom: 1px solid #21262d;
+  background: #0d1117;
+}
+
+.line code {
+  padding: 6px 10px;
+  white-space: pre;
+  overflow-x: auto;
+}
+
+.gutter {
+  border: 0;
+  border-right: 1px solid #30363d;
+  background: transparent;
+  color: #6e7681;
+  cursor: pointer;
+}
+
+.gutter:disabled {
+  cursor: default;
+}
+
+.add {
+  background: #033a16;
+}
+
+.del {
+  background: #3c1618;
+}
+
+.context,
+.empty {
+  background: #0d1117;
+}
+
+.hunk {
+  background: #1f6feb33;
+}

@@ -1,0 +1,21 @@
+.viewer {
+  flex: 1;
+  overflow: hidden;
+  background: var(--bg);
+  display: flex;
+  flex-direction: column;
+}
+
+.flat {
+  overflow: auto;
+}
+
+.virtualScroll {
+  flex: 1;
+  overflow: auto;
+}
+
+.message {
+  padding: 24px;
+  color: var(--text-dim);
+}

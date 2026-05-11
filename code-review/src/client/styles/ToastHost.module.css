@@ -1,0 +1,32 @@
+.host {
+  position: fixed;
+  bottom: 18px;
+  right: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 100;
+}
+
+.toast {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--bg-elev);
+  border: 1px solid var(--red);
+  border-radius: 6px;
+  padding: 10px 14px;
+  color: var(--text);
+  font-size: 13px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  min-width: 240px;
+}
+
+.dismiss {
+  background: transparent;
+  color: var(--text-dim);
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 0 4px;
+}

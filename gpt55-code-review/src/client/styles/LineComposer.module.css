@@ -1,0 +1,27 @@
+.composer {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 8px;
+  margin: 8px 16px 8px 70px;
+  padding: 8px;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  background: #161b22;
+}
+
+.composer input {
+  flex: 1;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  background: #0d1117;
+  color: #c9d1d9;
+  padding: 8px;
+}
+
+.composer button {
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  background: #21262d;
+  color: #c9d1d9;
+  padding: 8px 10px;
+}

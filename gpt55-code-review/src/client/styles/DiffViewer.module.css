@@ -1,0 +1,19 @@
+.viewer,
+.virtual {
+  height: calc(100vh - 112px);
+  overflow: auto;
+}
+
+.splitRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.hunk {
+  padding: 6px 14px;
+  background: #1f6feb33;
+  color: #79c0ff;
+  font-family: "Cascadia Code", Consolas, monospace;
+  border-top: 1px solid #30363d;
+  border-bottom: 1px solid #30363d;
+}

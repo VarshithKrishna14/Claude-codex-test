@@ -1,0 +1,53 @@
+.thread {
+  grid-column: 1 / -1;
+  margin: 8px 16px 8px 70px;
+  padding: 10px;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  background: #161b22;
+}
+
+.threadHeader {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.threadHeader button,
+.thread form button {
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  background: #21262d;
+  color: #c9d1d9;
+  padding: 4px 8px;
+}
+
+.comment {
+  padding: 8px 0;
+  border-top: 1px solid #30363d;
+}
+
+.comment div {
+  display: flex;
+  justify-content: space-between;
+  color: #8b949e;
+}
+
+.comment p {
+  margin: 6px 0 0;
+}
+
+.thread form {
+  display: flex;
+  gap: 8px;
+}
+
+.thread input {
+  flex: 1;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  background: #0d1117;
+  color: #c9d1d9;
+  padding: 8px;
+}

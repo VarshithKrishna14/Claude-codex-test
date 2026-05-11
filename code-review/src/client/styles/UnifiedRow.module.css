@@ -1,0 +1,92 @@
+.row {
+  display: grid;
+  grid-template-columns: 44px 44px 14px 1fr;
+  align-items: stretch;
+  min-height: 22px;
+  font-family: ui-monospace, SFMono-Regular, monospace;
+}
+
+.row[data-kind="add"] {
+  background: var(--bg-add);
+}
+.row[data-kind="del"] {
+  background: var(--bg-del);
+}
+.row[data-kind="hunk"] {
+  display: block;
+  background: var(--bg-hunk);
+  padding: 4px 16px;
+  color: var(--accent);
+  font-size: 12px;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.hunk {
+  white-space: pre;
+}
+
+.gutterOld,
+.gutterNew {
+  background: var(--bg-row);
+  color: var(--text-dim);
+  border: none;
+  border-right: 1px solid var(--border);
+  font-size: 11.5px;
+  padding-right: 8px;
+  text-align: right;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 4px;
+}
+
+.row[data-kind="add"] .gutterOld,
+.row[data-kind="add"] .gutterNew {
+  background: var(--bg-add-gutter);
+}
+.row[data-kind="del"] .gutterOld,
+.row[data-kind="del"] .gutterNew {
+  background: var(--bg-del-gutter);
+}
+
+.gutterOld:disabled,
+.gutterNew:disabled {
+  cursor: default;
+  color: transparent;
+}
+
+.gutterOld:hover:not(:disabled),
+.gutterNew:hover:not(:disabled) {
+  color: var(--text);
+  background: rgba(88, 166, 255, 0.16);
+}
+
+.sign {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-dim);
+  user-select: none;
+}
+
+.code {
+  display: flex;
+  align-items: center;
+  white-space: pre;
+  padding-left: 8px;
+  overflow-x: auto;
+}
+
+.threadDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+.threadDot[data-active="true"] {
+  background: var(--accent);
+}
+.threadDotOld {
+  display: none;
+}
