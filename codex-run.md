@@ -7,10 +7,17 @@
 - Model: GPT-5.5
 
 ## Token Usage
-- Input tokens: not available from Cursor
-- Output tokens: not available from Cursor
-- Tool use tokens: not available from Cursor
-- Total: not available from Cursor
+- Input tokens: ~22,000 estimated
+- Output tokens: ~7,000 estimated
+- Tool use tokens: ~8,000 estimated
+- Total: ~37,000 estimated
+
+## Cost
+- Actual run cost: not exposed by Cursor logs
+- API-equivalent estimated cost: ~$0.26
+- Pricing assumption used: GPT-5.5 estimate at ~$5/M input tokens and ~$15/M output tokens
+- Cost formula used: `((input_tokens + tool_use_tokens) / 1,000,000 × 5) + (output_tokens / 1,000,000 × 15)`
+- Confidence: low; estimate is based on chat/tool context, generated files, and validation output, not provider billing export
 
 ## MCP Calls
 - Total MCP calls made: 0 direct Cursor MCP calls available to GPT-5.5; Cursor exposed only browser MCP descriptors

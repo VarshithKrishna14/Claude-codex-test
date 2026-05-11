@@ -45,6 +45,19 @@
 - Time to fully working UI: 12m 17s observed.
 - Total tokens: not captured.
 
+## Token Usage
+- Input tokens: ~65,000 estimated
+- Output tokens: ~34,000 estimated
+- Tool use tokens: ~22,000 estimated
+- Total: ~121,000 estimated
+
+## Cost
+- Actual run cost: not exposed by Claude Code logs
+- API-equivalent estimated cost: ~$3.86
+- Pricing assumption used: Claude Opus-class pricing at ~$15/M input tokens and ~$75/M output tokens
+- Cost formula used: `((input_tokens + tool_use_tokens) / 1,000,000 × 15) + (output_tokens / 1,000,000 × 75)`
+- Confidence: medium-low; estimate is based on 36 source files, smoke-test/tool context, terminal transcript, and 12m17s observed wall-clock run
+
 ## Smoke Test
 - Two-client WebSocket smoke test ran live.
 - Alice and Bob both received bootstrap.

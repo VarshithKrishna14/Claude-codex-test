@@ -48,6 +48,19 @@
 - Time to fully working validated WS server: ~15 min wall-clock.
 - Total tokens: not available from Cursor.
 
+## Token Usage
+- Input tokens: ~52,000 estimated
+- Output tokens: ~24,000 estimated
+- Tool use tokens: ~23,000 estimated
+- Total: ~99,000 estimated
+
+## Cost
+- Actual run cost: not exposed by Cursor logs
+- API-equivalent estimated cost: ~$0.74
+- Pricing assumption used: GPT-5.5 estimate at ~$5/M input tokens and ~$15/M output tokens
+- Cost formula used: `((input_tokens + tool_use_tokens) / 1,000,000 × 5) + (output_tokens / 1,000,000 × 15)`
+- Confidence: medium-low; estimate is based on 28 source files, validation loops, terminal output, and the current chat/tool transcript
+
 ## Smoke Test
 - Server started on `http://127.0.0.1:8877`.
 - Two-client WS smoke test passed.

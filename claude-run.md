@@ -7,10 +7,16 @@
 - Model: Claude Opus 4.7
 
 ## Token Usage
-- Input tokens: not captured
-- Output tokens: not captured
-- Tool use tokens: not captured
-- Total: not captured
+- Input tokens: ~45,000 estimated
+- Output tokens: ~8,000 estimated
+- Tool use tokens: ~18,000 estimated
+- Total: ~71,000 estimated
+
+## Cost
+- API-equivalent estimated cost: ~$1.55
+- Pricing assumption used: Claude Opus-class pricing at ~$15/M input tokens and ~$75/M output tokens
+- Cost formula used: `((input_tokens + tool_use_tokens) / 1,000,000 × 15) + (output_tokens / 1,000,000 × 75)`
+- Confidence: low-medium; estimate is based on prompt size, generated files, MCP/tool context, and observed report output
 
 ## MCP Calls
 - Total MCP calls made: not fully captured
